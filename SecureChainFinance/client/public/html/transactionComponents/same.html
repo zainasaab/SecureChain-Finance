@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" href="../css/walletStyle.css">
+
+    <script defer src="../client/src/App.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navLogo">
+                <img src="../media/logo.PNG">
+            </div>
+            <ul> 
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/transactions.html">Transactions</a></li>
+                <li><a href="../html/profile.html">Profile</a></li>
+                <li><a href="../html/wallet.html">Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Same Bank Transaction</h1>
+
+    <div class="tform">
+        <form method="post" action="process_form.php">
+            <label type="Beneficy Name">Beniciery Name:</label><br>
+            <input type="text" id="BeneficieryName" name="BeneficieryName" required><br>
+            <label for="Account Number">Account Number:</label><br>
+            <input type="text" id="AccountNumber" name="AccountNumber" required><br>
+            <label for="Beneficiery Short Name">Beneficiery Short Name:</label><br>
+            <input type="text" id="BeneficieryShortName" name="BeneficieryShortName" required><br>
+            <label for="Transaction purpose:">Transaction purpose:</label><br>
+            <input type="text" id="TransactionPurpose" name="TransactionPurpose" required><br>
+    
+            <button type="button" href="../transactionComponents/confirm.html">Confirm</button>
+            <button type="button" href="../transactions.html">Cancel</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 SecureChain Finance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

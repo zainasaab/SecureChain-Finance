@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" href="../css/walletStyle.css">
+
+    <script defer src="../client/src/App.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navLogo">
+                <img src="../media/logo.PNG">
+            </div>
+            <ul> 
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/transactions.html">Transactions</a></li>
+                <li><a href="../html/profile.html">Profile</a></li>
+                <li><a href="../html/wallet.html">Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="finalt">
+      <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>Your transaction has been done successfully.</p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    
+    <script>
+      const confirmButton = document.getElementById('confirmButton');
+      const closePopupButton = document.getElementById('closePopup');
+      const popup = document.getElementById('popup');
+    
+      confirmButton.addEventListener('click', () => {
+          popup.style.display = 'flex';
+      });
+    
+      closePopupButton.addEventListener('click', () => {
+          popup.style.display = 'none';
+      });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 SecureChain Finance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

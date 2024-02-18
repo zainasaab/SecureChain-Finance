@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" href="../css/walletStyle.css">
+
+    <script defer src="../client/src/App.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navLogo">
+                <img src="../media/logo.PNG">
+            </div>
+            <ul> 
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/transactions.html">Transactions</a></li>
+                <li><a href="../html/profile.html">Profile</a></li>
+                <li><a href="../html/wallet.html">Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>One Time transaction</h1>
+
+    <div class="tform">
+        <form method="">
+            <label for="Invoice Number">Invoice Number:</label><br>
+            <input type="text" id="Invoice Number" name="Invoice Number" required><br>
+            <label for="Amount">Amount:</label><br>
+            <input type="text" id="Amount" name="Amount" required><br>
+            <label for="Direction">Direction:</label><br>
+            <select id="Direction" name="Direction" required>
+                <option value="IRS">Electrical Company</option>
+                <option value="DMV">Ministry of Education</option>
+                <option value="IRS">Ministry of Tourism</option>
+                <option value="DMV">Balady</option>
+            </select>
+            <div>
+                <button type="button" href="../transactionComponents/confirm.html">Confirm</button>
+                <button type="button" href="../transactions.html">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SecureChain Finance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+    "name": "securechain-finance",
+    "version": "1.0.0",
+    "description": "A blockchain-based finance application for secure transactions and account management.",
+    "main": "index.js",
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "lint": "eslint ./src --ext .js,.jsx",
+      "format": "prettier --write 'src/**/*.{js,jsx,json,css}'"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yourusername/securechain-finance.git"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/yourusername/securechain-finance/issues"
+    },
+    "homepage": "https://github.com/yourusername/securechain-finance#readme",
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "4.0.3",
+      "web3": "^1.3.6",
+      "redux": "^4.0.5",
+      "react-redux": "^7.2.2",
+      "@reduxjs/toolkit": "^1.5.0",
+      "@openzeppelin/contracts": "^4.0.0"
+    },
+    "devDependencies": {
+      "eslint": "^7.14.0",
+      "prettier": "^2.2.1",
+      "eslint-config-prettier": "^8.1.0",
+      "eslint-plugin-react": "^7.21.5",
+      "eslint-plugin-react-hooks": "^4.2.0"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "prettier"
+      ],
+      "plugins": [
+        "react"
+      ],
+      "rules": {}
+    },
+    "prettier": {
+      "semi": true,
+      "singleQuote": true
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+  

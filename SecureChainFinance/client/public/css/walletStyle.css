@@ -1,0 +1,211 @@
+body {
+    background-image: url('../media/background.png');
+    background-size: cover;
+}
+/* Layout Grid CSS */
+.CardLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 300px;
+    height: 100vh;
+}
+
+p {
+    color: white;
+}
+.Column1,
+.Column2 {
+    flex: 1;
+}
+
+h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Playfair Display, serif';
+}
+
+
+/*  Card Credential CSS */
+.cardCredentials {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 500px;
+    height: auto;
+    background-color: #001A3E;
+    border-radius: 0.5rem;
+}
+  
+.cardCredentials .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 500;
+    list-style: none;
+    font-family: 'Playfair Display, serif';
+}
+  
+.cardCredentials .button {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(90, 111, 131);
+    font-size: 0.75rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 1px rgb(67, 82, 96);
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+}
+  
+.cardCredentials .button::before,
+.cardCredentials .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.cardCredentials .button:hover {
+    box-shadow: 0px 0px 20px 0 rgb(50, 56, 62);
+}
+  
+.cardCredentials .button:hover::before,
+.cardCredentials .button:hover::after {
+    width: 0;
+    opacity: 0;
+}
+
+
+/*  Card Selector CSS */
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.cardInfo .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+  
+.cardInfo .card:hover {
+    transform: scale(1.1, 1.1);
+}
+  
+.cardInfo:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+.creditCard {
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+}
+  
+.heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+}
+  
+.logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+  
+.chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+}
+  
+.contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+}
+  
+.number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+}
+  
+.valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+}
+  
+.date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+}
+  
+.name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+}
+  
+  
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card-front {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+
